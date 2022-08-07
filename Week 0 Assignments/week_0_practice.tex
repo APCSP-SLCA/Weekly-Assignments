@@ -1,0 +1,91 @@
+\documentclass[addpoints, 12pt]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{multirow,booktabs}
+\usepackage[table]{xcolor}
+\usepackage{fullpage}
+\usepackage{lastpage}
+\usepackage{enumitem}
+% \usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{wrapfig}
+\usepackage{setspace}
+\usepackage{multicol}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage[margin=3cm]{geometry}
+\usepackage{listings}
+\usepackage{pgf}
+\usepackage{pgfplots}
+\pgfplotsset{soldot/.style={color=red,only marks,mark=*, mark options={scale=1.5}},
+             holdot/.style={color=red,fill=white,only marks,mark=*, mark options={scale=1.5}},
+             compat=1.12}
+\usepgfplotslibrary{external}
+\usepgfplotslibrary{fillbetween}
+\usetikzlibrary{intersections, calc, angles, quotes}
+\usepackage{floatrow}
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\newcommand\assignment{Week 0 Practice Problems}
+\newcommand\school{SouthLake Christian Academy}
+\newcommand\course{AP CSP}
+\newcommand\examdate{August 2022}
+
+\newcommand*{\texthide}[1]{\underline{\phantom{#1}}}
+\newcommand*{\textshow}[1]{\underline{#1}}
+
+\lstdefinestyle{mystyle}{
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}
+
+\pagestyle{head}
+\firstpageheader{Name: \\ Section: }{\textbf{\Large \assignment}}{Date: \hspace{5em}}%
+\firstpageheadrule
+
+\begin{document}
+
+\begin{center}\textit{Feel free to use the paper tool we made in class!}\end{center}
+
+\begin{questions}
+
+    \question Give an example of one abstraction you use in life, and explain how it's an abstraction.
+    Briefly explain the inner workings of this abstraction (use Google!)
+    \vfill
+		
+	\question If you sometimes count using your fingers, odds are you can count up to 5 things on one hand (using 5 fingers).
+    But that's if you're using ``unary" notation, whereby you only have a single digit at your disposal, a finger, which you can think of as a \texttt{1}.
+    Binary, by contrast, allows you to use two digits, \texttt{0} and \texttt{1}.
+    How high could you count on one hand (with 5 fingers) using binary?
+    Assume that a raised finger represents a \texttt{1} and a lowered finger represents a \texttt{0}.
+	\vfill
+
+	\question Convert the following to decimal. Remember that ``\texttt{0b}'' just indicates that the number is in binary!
+    \textbf{You must show all your work!}
+    \begin{parts}
+        \part \texttt{0b1001}
+        \vfill
+        \part \texttt{0b1110}
+        \vfill
+        \part \texttt{0b0011}
+        \vfill
+    \end{parts}
+	
+
+    \question If a computer only had 4-bit hardware, what is the result of \texttt{0b1101 + 0b0011}?
+    Indicate whether an overflow, underflow, or no error occured.
+    \vfill
+
+\end{questions}
+
+\end{document}
