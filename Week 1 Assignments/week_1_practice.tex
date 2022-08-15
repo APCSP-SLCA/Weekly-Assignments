@@ -60,20 +60,75 @@
 \begin{questions}
 		
 	\question Recall that we looked at ASCII in lecture, which uses just 7 or 8 bits to represent letters of the alphabet.
-    Read up on ``Unicode", via Google, and explain in your own words how Unicode is able to represent many more symbols than can ASCII,
-    which is particularly helpful for written languages with many more characters than English.
-	\vfill
+
+    \begin{parts}
+        \part Read up on ``Unicode", via Google, and explain in your own words how Unicode is able to represent many more symbols than can ASCII,
+        which is particularly helpful for written languages with many more characters than English.
+        \vfill
+        \part What is the binary number that corresponds to the Unicode character ``A"?
+        \vfill
+    \end{parts}
 
 	\question Decode the message:
     
     \texttt{0b01000001 01101110 01110011 01110111 01100101 01110010 00100000 01101001 01110011 00100000 00110100 00110010 00101110}
     \vfill
 
+    \newpage
+
     \question ``Digitize'' the following audio (analog) signal by choosing a sampling frequency,
     drawing ``lollipops'' at that sampling frequency,
-    and recording the approximate amplitude of each ``lollipops''.
-    \vfill
-	
+    and recording the approximate amplitude of each ``lollipops''. Use as many rows of the chart as needed!
+
+    \begin{tikzpicture}
+        \begin{axis}[
+            axis lines = middle,
+            xmin = 0, xmax = 2*pi,
+            ymin = -1, ymax = 1,
+            width=10cm, height=5cm,
+			domain=0:2*pi,
+            minor y tick num=4,
+            minor x tick num=4,
+            x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+            y label style={at={(axis description cs:-0.1,.5)},rotate=90,anchor=south},
+            xlabel={seconds},
+            ylabel={amplitude},
+			ytick={-1, 1},
+			yticklabels={$-1$, $1$}
+        ]
+		
+			\addplot[color=red, very thick, <->,domain=0:2*pi, samples=100] (x, {0.5*sin(deg(2*x)) + 0.5*cos(deg(x))});
+
+        \end{axis}
+    \end{tikzpicture}
+
+    \begin{table}[h]
+        \begin{tabular}{|c|c|}
+        \hline
+        Time (seconds) & Amplitude/Volume \\
+        \hline
+                       &                  \\
+        \hline
+                       &                  \\
+        \hline
+                       &                  \\
+        \hline
+                       &                  \\
+                       \hline
+                       &                  \\
+                       \hline                      
+                       &                  \\
+                       \hline
+                       &                  \\
+                       \hline
+                       &                  \\
+                       \hline
+                       &                  \\
+                       \hline
+                       & \\
+                       \hline            
+        \end{tabular}
+    \end{table}
 
     \question If an image originally takes up 20kb of memory,
     and a certain algorithm compresses that image down to 10kb,
