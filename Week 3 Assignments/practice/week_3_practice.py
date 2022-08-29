@@ -3,7 +3,7 @@
 # Group Members:
 # Date:
 
-# Remember to also create (a) file(s) with the following:
+# Remember to also create/edit (a) file(s) with the following:
 #       * description of each functions's purpose
 #       * description of each functions's function
 #       * pseudocode and/or flow diagram
