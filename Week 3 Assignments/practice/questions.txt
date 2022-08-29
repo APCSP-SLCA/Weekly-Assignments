@@ -17,6 +17,3 @@
 
 
 
-
-4. For each function you write in week_3_practice.py, describe the function's purpose and function.
-
