@@ -1,0 +1,22 @@
+
+
+1. What is the difference between variables in programming and variables in mathematics?
+
+
+
+
+
+2. What is the difference between regular division and integer division?
+
+
+
+
+
+3. What does the "%" operator do?
+
+
+
+
+
+4. For each function you write in week_3_practice.py, describe the function's purpose and function.
+
